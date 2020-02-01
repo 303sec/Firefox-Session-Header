@@ -1,0 +1,31 @@
+{
+  "description": "Session Header",
+  "manifest_version": 2,
+  "name": "session-header",
+  "version": "0.1",
+  "homepage_url": "https://github.com/303sec/sessionheader",
+  "icons": {
+    "48": "icons/modify-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "tabs",
+    "contextualIdentities",
+    "cookies"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/modify-32.png",
+    "default_title": "Session Header",
+    "default_popup": "popup/menu.html"
+  }
+  }
+}
